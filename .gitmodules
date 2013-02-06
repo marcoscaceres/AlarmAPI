@@ -1,0 +1,3 @@
+[submodule "deps/webidl"]
+	path = deps/webidl
+	url = git@github.com:extensibleweb/webidl.js.git
