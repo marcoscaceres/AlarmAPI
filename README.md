@@ -3,6 +3,17 @@
 Implementation of the [W3C Alarm API](http://sysapps.github.com/sysapps/proposals/alarm/Overview.html)
 
 ## Getting Started
+check out the project as per normal. Run the following command:
+
+```
+ git submodule init 
+ git submodule update
+```
+
+(if you get anything strange, try running ```git submodule update``` again).
+
+
+This will fetch some dependencies from GitHub. 
 
  1. Point your local web server to the root directory for the repo. 
  2. Navigate to /demo/index.html
