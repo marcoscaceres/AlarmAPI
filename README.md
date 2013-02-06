@@ -4,6 +4,10 @@ Implementation of the [W3C Alarm API](http://sysapps.github.com/sysapps/proposal
 
 ## Getting Started
 
+ 1. Point your local web server to the root directory for the repo. 
+ 2. Navigate to /demo/index.html
+ 3. Open up the JS debug console, your should now have access to ```window.alarms```. 
+
 ```javascript
 
 ```
