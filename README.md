@@ -1,13 +1,11 @@
-# Sysapps
+# Alarm API
 
-Implementation of sysapps APIs
+Implementation of the [W3C Alarm API](http://sysapps.github.com/sysapps/proposals/alarm/Overview.html)
 
 ## Getting Started
-Install the module with: `npm install Sysapps`
 
 ```javascript
-var Sysapps = require('Sysapps');
-Sysapps.awesome(); // "awesome"
+
 ```
 
 ## Documentation
