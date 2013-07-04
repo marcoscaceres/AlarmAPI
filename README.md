@@ -2,6 +2,12 @@
 
 Implementation of the [W3C Alarm API](http://sysapps.github.com/sysapps/proposals/alarm/Overview.html)
 
+## Warning
+This is an unsupported component with an indefinite lifetime. 
+This should be used for evaluation purposes only and should not be used for production level applications.
+
+
+
 ## Getting Started
 check out the project as per normal. Run the following command:
 
