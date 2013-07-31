@@ -13,7 +13,7 @@ callback interface EventListener {
  */
 
 define(function(require) {
-	var WebIDL = require("WebIDL/interfaces/WebIDL"),
+	var WebIDL = require("WebIDL"),
 		IDLBoolean = require("WebIDL/types/Boolean"),
 		IDLDOMString = require("WebIDL/types/DOMString"),
 		eventManager;
