@@ -2,3 +2,9 @@
 <meta charset=utf-8>
 <title>Alarm API</title>
 <script data-main="/lib/main.js" src="/deps/require.js"></script>
+<script>
+document.addEventListener('task', function (e) {
+				// e.target matches target from above
+				console.log("!!!! Task raised !!!");
+				}, false);
+</script>
