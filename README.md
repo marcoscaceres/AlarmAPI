@@ -1,6 +1,6 @@
 # Alarm API
 
-Implementation of the [W3C Alarm API](http://sysapps.github.com/sysapps/proposals/alarm/Overview.html)
+Implementation of the [W3C Task Scheduler API](http://www.w3.org/2012/sysapps/web-alarms/)
 
 ## Warning
 **This is an unsupported component with an indefinite lifetime. 
@@ -17,6 +17,8 @@ check out the project as per normal. Run the following command:
 ```
 
 (if you get anything strange, try running ```git submodule update``` again).
+(if it still does not help check your .gitconfig file and try to change remote link
+to use https and URL standard for repo url).
 
 
 This will fetch some dependencies from GitHub. 
