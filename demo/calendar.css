@@ -9,7 +9,7 @@
 .calendar th
 {
         border:2px solid black;
-                width:36px;
+        width:36px;
 }
 .calendar td
 {
@@ -30,4 +30,9 @@
 .days_from_other_month 
 {
         color: #C0C0C0;
+}
+
+ td.days_from_other_month:hover
+{
+	background-color: white;
 }

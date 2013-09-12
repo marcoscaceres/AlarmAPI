@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<html>
+<head>
 <meta charset=utf-8>
 <title>Alarm API</title>
 <script data-main="/lib/main.js" src="/deps/require.js"></script>
@@ -15,6 +16,9 @@
 <!-- Below attached js file contains all required functions for proper TaskScheduler prototype behaviour -->
 <script type="text/javascript" src="../lib/interfaces/LoadTasks.js"></script>
 
+
+</head>
+<body>
 
 <script  type="text/javascript">
 
@@ -35,7 +39,8 @@
   * Adding created dynamically calendar picker with default day set to now()
   */		
   calendar(new Date());
-  
+  //calendar(new Date('Thu Oct 12 2013 14:24:35 GMT+0200 (CEST)'));
+
   add_task_details_field();
   /* 
   * Adding created dynamically time picker with default time set to 12:00
@@ -63,7 +68,8 @@
 	close_all_tasks (new Date());
 	return 'All pending tasks has been closed.';
   };
-  
-
 </script>
+
+</body>
+</html>
 

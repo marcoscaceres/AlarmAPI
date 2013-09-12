@@ -28,7 +28,6 @@ function add_clock()
 	
 }
 
-
 function set_time(task_time)//pass element name
 {
 	var time = document.getElementById(task_time).value;
@@ -68,7 +67,7 @@ function set_time_now()
 	foo = document.getElementById('task_details');
 	var timer=document.createElement("p");
 	timer.id = "timer";
-	timer.innerHTML = time;
+	timer.innerHTML = time.getHours() + ":" + time.getMinutes() + ":00";
 	foo.appendChild(timer);
 	
 	calendar_date.setHours(time.getHours());

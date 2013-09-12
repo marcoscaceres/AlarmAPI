@@ -104,7 +104,7 @@ function calendar(date)
 	
 	tmp_table_elem_1 = document.createElement('tr');
  
-	for(i = 1; week_number < (month_days_number + first_day_of_month) %7 ; i++) 
+	for(i = 1; week_number < (Math.round(month_days_number + first_day_of_month)/7) ; i++) 
         {
                 if(week_number === 0){
 			// filling up first week
@@ -151,10 +151,10 @@ function calendar(date)
 		}
                 tmp_table_elem_2 = null;
         }
+	tmp_table_elem_2 = null;
+	tmp_table_elem_1 = null; 
 
         table.appendChild(table_body);
-	console.log(table);
- 	console.log(body);
 	body.appendChild(table); 
 	
         return true;
@@ -177,7 +177,8 @@ function set_calendar_date(day, month, year)
     foo = document.getElementById('task_details');
     var dater=document.createElement("p");
     dater.id = "dater";
-    dater.innerHTML = calendar_date;
+    dater.innerHTML = calendar_date.getDate() + "-" + calendar_date.getMonth()
+	+ "-" +calendar_date.getUTCFullYear() ;
     foo.appendChild(dater);
 }
 
