@@ -43,6 +43,29 @@ function add_task()
 
 
 
+function get_pending_tasks()
+{
+    window.taskScheduler.getPendingTasks().then(function(){ console.log('task creation SUCESS')}, function(){console.log('task creation FAILED')});
+}
+
+
+function add_pendingTasks_button( )
+{
+	var foo = document.getElementsByTagName('body')[0];
+	var tmp = document.createElement("br");
+	foo.appendChild(tmp);
+	tmp = document.createElement("br");
+	foo.appendChild(tmp);
+  	/* adding button to get all pendung tasks */
+	var add_task = document.createElement("input");
+	add_task.setAttribute("type", "button");
+	add_task.setAttribute("value", "get pending tasks");
+	add_task.setAttribute("name", "get_pending_tasks");
+	add_task.setAttribute("onclick","get_pending_tasks()");
+	foo.appendChild(add_task);
+}
+
+
 
 
 
