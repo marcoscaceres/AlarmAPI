@@ -38,14 +38,14 @@ function add_task_button()
  */
 function add_task()
 {
-      window.taskScheduler.add(calendar_date, true, document.getElementById('task_data').value ).then(function(){ console.log('task creation SUCESS')}, function(){  console.log('task creation FAILED')});
+      window.taskScheduler.add(calendar_date, true, document.getElementById('task_data').value ).then(function(){ console.log('task creation SUCCESS')}, function(){  console.log('task creation FAILED')});
 }
 
 
 
 function get_pending_tasks()
 {
-    window.taskScheduler.getPendingTasks().then(function(){ console.log('task creation SUCESS')}, function(){console.log('task creation FAILED')});
+    window.taskScheduler.getPendingTasks().then(function(){ console.log('task creation SUCCESS')}, function(){console.log('task creation FAILED')});
 }
 
 
