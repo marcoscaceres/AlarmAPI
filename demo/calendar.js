@@ -5,10 +5,12 @@ function calendar(date) {
     var day = date.getDate(),
         month = date.getMonth(),
         year = date.getUTCFullYear(),
-        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
+	'August', 'September', 'October', 'November', 'December'],
         days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
         days_in_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-        month_days_number = (month == 1 ? ((year % 4 === 0 && year !== 1900) ? 29 : 28) : (month > 6 ? (month % 2 == 0 ? 30 : 31) : (month % 2 == 0 ? 31 : 30))),
+        month_days_number = (month == 1 ? ((year % 4 === 0 && year !== 1900) ? 29 : 28) 
+	: (month > 6 ? (month % 2 == 0 ? 30 : 31) : (month % 2 == 0 ? 31 : 30))),
         first_day_of_month = date,
         week_number = 0,
         first_week = null,
@@ -83,7 +85,8 @@ function calendar(date) {
     for (i = 1; i <= first_day_of_month; i++) {
         tmp_table_elem_2 = document.createElement('td');
         tmp_table_elem_2.setAttribute('class', 'days_from_other_month');
-        tmp_table_elem_2.appendChild(document.createTextNode((days_in_month[month - 1] - first_day_of_month + i)));
+        tmp_table_elem_2.appendChild(document.createTextNode((days_in_month[month - 1] 
+        - first_day_of_month + i)));
         //add first row with week days
         first_week.appendChild(tmp_table_elem_2);
         tmp_table_elem_2 = null;
@@ -100,8 +103,10 @@ function calendar(date) {
             if (day === i) {
                 tmp_table_elem_2.setAttribute('class', 'today');
             }
-            tmp_table_elem_2.setAttribute("onclick", "set_calendar_date(" + i + "," + month + "," + year + ")");
-            tmp_table_elem_2.appendChild(document.createTextNode(i - month_days_number + month_days_number));
+            tmp_table_elem_2.setAttribute("onclick", "set_calendar_date(" 
+	    + i + "," + month + "," + year + ")");
+            tmp_table_elem_2.appendChild(document.createTextNode(i 
+            - month_days_number + month_days_number));
             first_week.appendChild(tmp_table_elem_2);
             tmp_table_elem_2 = null;
         } else {
@@ -112,9 +117,11 @@ function calendar(date) {
             if (last_week_indicator) {
                 tmp_table_elem_2.setAttribute('class', 'days_from_other_month');
             } else {
-                tmp_table_elem_2.setAttribute("onclick", "set_calendar_date(" + i + "," + month + "," + year + ")");
+                tmp_table_elem_2.setAttribute("onclick", 
+					      "set_calendar_date(" + i + "," + month + "," + year + ")");
             }
-            tmp_table_elem_2.appendChild(document.createTextNode((i <= month_days_number) ? i : (i - month_days_number)));
+            tmp_table_elem_2.appendChild(document.createTextNode((i <= month_days_number) ? 
+            i : (i - month_days_number)));
             tmp_table_elem_1.appendChild(tmp_table_elem_2);
             tmp_table_elem_2 = null;
         }
@@ -160,7 +167,8 @@ function set_calendar_date(day, month, year) {
     foo = document.getElementById('task_details');
     var dater = document.createElement("p");
     dater.id = "dater";
-    dater.innerHTML = calendar_date.getDate() + "-" + calendar_date.getMonth() + "-" + calendar_date.getUTCFullYear();
+    dater.innerHTML = calendar_date.getDate() + "-" + calendar_date.getMonth() 
+    + "-" + calendar_date.getUTCFullYear();
     foo.appendChild(dater);
 }
 
