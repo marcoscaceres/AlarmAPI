@@ -48,9 +48,9 @@ function add_task() {
 
 function get_pending_tasks() {
     window.taskScheduler.getPendingTasks().then(function () {
-        console.log('task creation SUCCESS')
+        console.log('get pending tasks SUCCESS')
     }, function () {
-        console.log('task creation FAILED')
+        console.log('get pending tasks FAILED')
     });
 }
 
