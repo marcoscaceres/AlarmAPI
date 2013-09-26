@@ -1,0 +1,31 @@
+.calendar {
+    border: 2px solid black;
+    padding: 1px;
+    width: 300px;
+    margin: left;
+    height: 300px;
+}
+    .calendar th {
+        border: 2px solid black;
+        width: 36px;
+}
+    .calendar td {
+        border: 1px solid black;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+}
+    .calendar td: hover {
+        background-color: yellow;
+}
+    .today {
+        color: #ff0000;
+        font-weight: bold;
+}
+    .days_from_other_month {
+        color: #C0C0C0;
+}
+
+td.days_from_other_month: hover {
+    background-color: white;
+}
